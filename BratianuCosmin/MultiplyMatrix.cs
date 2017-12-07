@@ -72,7 +72,7 @@ namespace MatriceaII_Revolutia
         {
             Console.WriteLine("a[l,c]-b[l,c] = >al,ac,bl,bc");
             string str = Console.ReadLine();
-            string[] str2 = str.Split('[', ',', ']');
+            string[] str2 = str.Split('a','b','=','[', ',', ']');
             int[,] a = new int[Convert.ToInt32(str2[0]), Convert.ToInt32(str2[1])];
             int[,] b = new int[Convert.ToInt32(str2[2]), Convert.ToInt32(str2[3])];
             Random r = new Random();
